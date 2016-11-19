@@ -1,0 +1,14 @@
+@media screen and (max-width: 800px)  {
+
+  .col-1 {width: 33.333%;}
+
+
+  body {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .wrapper {
+    padding-top: 93px;
+  }
+}

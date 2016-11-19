@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  if channels != 'null'
+    div.fixed
+      if channels != null
+        each item in channels
+          each channel in item.channels
+            form(method='post', action='/')
+              input.link.col-1(name='submit', value=channel.name, type='submit')
+              input(name='data', type='hidden', value=channel.endpoint)
+
+  //- h1= title
+  //- p Welcome to #{title}
+
+block content2
+  if err
+    H1 Villa kom upp.
+
+block content3
+  if valinstod != 'null'
+    ul
+      each item in valinstod
+        ul.col-2.stodvar
+          br
+          li.thick=item.title
+          if item.series.episode != ''
+            li.gr E#{item.series.episode}S#{item.series.series}
+          br
+          if item.description != ''
+            li.italian=item.description
+          else
+
+            li.italian Enginn lýsing.
+
+          br
+
+          li lengd #{item.duration}
+          li hefst #{item.startTime}
