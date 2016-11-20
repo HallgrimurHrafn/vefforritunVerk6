@@ -12,3 +12,23 @@
     padding-top: 93px;
   }
 }
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+    
+  .col-1 {width: 33.333%;}
+
+
+  body {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .wrapper {
+    padding-top: 93px;
+  }
+
+}
