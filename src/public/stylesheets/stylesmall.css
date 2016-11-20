@@ -16,8 +16,7 @@
 @media screen 
   and (device-width: 360px) 
   and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: portrait) {
+  and (-webkit-device-pixel-ratio: 3) {
     
   .col-1 {width: 33.333%;}
 
